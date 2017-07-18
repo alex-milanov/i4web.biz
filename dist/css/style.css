@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url(//fonts.googleapis.com/css?family=Open+Sans);
+@import url(//fonts.googleapis.com/css?family=Jura:400,500,600|Nothing+You+Could+Do:400,500,600&subset=cyrillic,cyrillic-ext);
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2336,39 +2337,50 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Open Sans"; }
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  box-sizing: border-box;
+  background: url("../assets/img/bg/tanja-heffner-263410.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Jura';
+  color: #fff; }
 
-.counter {
-  height: 32px;
-  line-height: 32px; }
-  .counter > * {
-    float: left; }
-  .counter > span {
-    height: 32px;
-    line-height: 32px;
-    display: inline-block;
-    font-size: 14px;
-    padding: 0px 10px; }
-  .counter button {
-    display: inline-block;
-    box-sizing: border-box;
-    height: 32px;
-    line-height: 12px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 14px;
-    background: #fafafa;
-    color: #333;
-    border: 0px;
-    transition: box-shadow 0.3s, background 0.3s;
-    box-shadow: 1px 1px 2px #ccc;
-    outline: none; }
-    .counter button:active {
-      padding: 11px 10px 9px 10px; }
-    .counter button:active {
-      outline: none; }
-    .counter button:hover {
-      box-shadow: 1px 1px 5px #aaa;
-      color: #000; }
+h1, h2, h3 {
+  color: #eee;
+  font-weight: 400;
+  text-shadow: 1px 1px 3px #000; }
+
+.small {
+  font-size: 0.8em; }
+
+.big {
+  font-size: 1.2em; }
+
+#ui {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%; }
+  #ui h1 {
+    font-size: 3.6em;
+    font-family: 'Nothing You Could Do'; }
+  #ui h2 {
+    font-size: 2em; }
+  #ui .hero {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    height: 200px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,44 @@
+
+// basic
+=reset
+  margin: 0px
+  padding: 0px
+  display: inline-block
+  box-sizing: border-box
+
+=header-height($s)
+  +reset
+  height: $s
+  line-height: $s
+
+// media queries
+=phone
+  @media (min-width: 0px) and (max-width: #{$tablet-width - 1px})
+    @content
+
+=tablet
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px})
+    @content
+
+=desktop
+  @media (min-width: #{$desktop-width})
+    @content
+
+// custom
+=cover-background($img-uri, $background-top:"center", $background-left:"center", $background-attachment:"fixed")
+	background: url($img-uri) no-repeat unquote($background-top) unquote($background-left) unquote($background-attachment)
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+
+=ui-button($h: 32px, $p: 10px)
+	display: inline-block
+	box-sizing: border-box
+	height: $h
+	line-height: $h - 2*$p
+	padding: $p
+	cursor: pointer
+	font-size: $h / 2 - 2px
+	&:active
+		padding: ($p + 1) $p ($p - 1) $p
