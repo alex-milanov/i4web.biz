@@ -76,6 +76,12 @@ const demos = [
 
 module.exports = ({state, actions}) => section('#ui', div('.hero', [
 	h1('i4web.biz'),
+	h2(['crafting', br(), 'digital', br(), 'experiences']),
+	ul('.menu', [
+		li([i('.fa.fa-info'), ' About']),
+		li([i('.fa.fa-eye'), ' Demos']),
+		li([i('.fa.fa-at'), ' Contact'])
+	]),
 	ul('.demos', demos.map(demo =>
 		li({
 			style: {
