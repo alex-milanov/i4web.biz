@@ -2370,31 +2370,90 @@ h1, h2, h3 {
   left: 0px;
   width: 100%;
   height: 100%; }
-  #ui h1 {
-    font-size: 3.6em;
-    font-family: 'Nothing You Could Do'; }
-  #ui h2 {
-    font-size: 2em; }
-  #ui .hero {
+  #ui .nav {
     position: fixed;
-    top: 60px;
-    left: 120px; }
-  #ui .menu {
-    margin: 0px;
-    padding: 0px;
-    display: inline-block;
-    box-sizing: border-box;
-    display: block;
-    width: 300px; }
-    #ui .menu li {
+    top: 30px;
+    left: 70px; }
+    #ui .nav h1 {
+      font-size: 3.6em;
+      font-family: 'Nothing You Could Do';
+      margin: 0px 20px;
+      width: 300px; }
+    #ui .nav h2 {
+      font-size: 1.4em;
+      margin: 0px 10px; }
+    #ui .nav .menu {
       margin: 0px;
       padding: 0px;
       display: inline-block;
       box-sizing: border-box;
-      width: 33.3%;
-      text-align: center;
-      text-shadow: 1px 1px 7px #333; }
-  #ui .demos {
+      display: block;
+      width: 400px;
+      background: rgba(200, 200, 200, 0.3);
+      line-height: 26px; }
+      #ui .nav .menu li {
+        margin: 0px;
+        padding: 0px;
+        display: inline-block;
+        box-sizing: border-box;
+        width: 33.3%;
+        text-shadow: 1px 1px 3px #333;
+        font-weight: bold;
+        text-align: center; }
+        #ui .nav .menu li a {
+          display: block;
+          width: 100%;
+          cursor: pointer;
+          transition: background 0.5s; }
+          #ui .nav .menu li a:hover {
+            background: rgba(200, 200, 200, 0.5); }
+  #ui .contact {
+    position: fixed;
+    top: 140px;
+    left: 70px;
+    width: 400px;
+    font-size: 16px;
+    line-height: 28px; }
+    #ui .contact input, #ui .contact label, #ui .contact button {
+      margin: 0px;
+      padding: 0px;
+      display: inline-block;
+      box-sizing: border-box;
+      height: 28px;
+      line-height: 28px;
+      display: block;
+      width: 100%;
+      border: 0px;
+      outline: none; }
+    #ui .contact label {
+      text-shadow: 0px 0px 3px #000;
+      margin-top: 5px; }
+    #ui .contact textarea, #ui .contact input {
+      padding: 0px 4px;
+      background: rgba(255, 255, 255, 0.6);
+      font-size: 14px;
+      box-shadow: inset -10px -10px 30px 5px #aaa, 0px 0px 5px 0px #000;
+      outline: none;
+      opacity: 0.7;
+      transition: opacity 0.5s; }
+      #ui .contact textarea:focus, #ui .contact input:focus {
+        opacity: 1; }
+    #ui .contact button {
+      cursor: pointer;
+      font-size: 14px;
+      margin-top: 5px;
+      opacity: 0.7;
+      background: rgba(255, 255, 255, 0.6);
+      transition: opacity 0.5s;
+      box-shadow: inset -10px -10px 30px 5px #aaa, 0px 0px 5px 0px #000; }
+      #ui .contact button:hover, #ui .contact button:focus {
+        opacity: 1; }
+    #ui .contact textarea {
+      padding: 4px;
+      border: 0px;
+      width: 100%;
+      height: 150px; }
+  #ui .showcase {
     margin: 0px;
     padding: 0px;
     display: inline-block;
@@ -2405,7 +2464,7 @@ h1, h2, h3 {
     top: 40px;
     right: 40px;
     list-style: none; }
-    #ui .demos li {
+    #ui .showcase li {
       margin: 0px;
       padding: 0px;
       display: inline-block;
@@ -2423,10 +2482,10 @@ h1, h2, h3 {
       opacity: 0.8;
       transition: background-size 0.5s;
       cursor: zoom-in; }
-      #ui .demos li:hover {
+      #ui .showcase li:hover {
         opacity: 1;
         background-size: 160%; }
-      #ui .demos li span {
+      #ui .showcase li span {
         background: rgba(255, 255, 255, 0.7);
         box-shadow: 0px 0px 15px 0px #777;
         line-height: 32px;

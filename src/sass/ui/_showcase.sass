@@ -1,0 +1,31 @@
+.showcase
+	+reset
+	width: 800px
+	height: 520px
+	position: fixed
+	top: 40px
+	right: 40px
+	list-style: none
+	li
+		+reset
+		margin: 0.2em
+		padding: 10px
+		color: #333
+		font-weight: bold
+		width: 32%
+		height: 32%
+		background: no-repeat center center
+		background-size: 140%
+		border-radius: 10px
+		box-shadow: inset -10px -10px 30px 5px #777, 0px 0px 5px 1px #000
+		opacity: 0.8
+		transition: background-size 0.5s
+		cursor: zoom-in
+		&:hover
+			opacity: 1
+			background-size: 160%
+		span
+			background: rgba(255, 255, 255, 0.7)
+			box-shadow: 0px 0px 15px 0px #777
+			line-height: 32px
+			padding: 4px

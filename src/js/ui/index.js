@@ -6,91 +6,12 @@ const {
 	h1, h2, ul, li, i, hr, br
 } = require('iblokz-snabbdom-helpers');
 // components
-const counter = require('./counter');
+const nav = require('./nav');
+const showcase = require('./showcase');
+const contact = require('./contact');
 
-const demos = [
-	{
-		title: 'AlphaPM',
-		description: 'Yet another project management system',
-		url: 'https://alex-milanov.github.io/alphapm',
-		repo: 'https://github.com/alex-milanov/alphapm',
-		img: '../assets/img/demos/alphapm.png'
-	},
-	{
-		title: 'Jam Station',
-		description: 'Web based DAW with Web Audio API & Web MIDI API',
-		url: 'https://alex-milanov.github.io/jam-station',
-		repo: 'https://github.com/alex-milanov/jam-station',
-		img: '../assets/img/demos/jam-station.png'
-	},
-	{
-		title: 'MongoAdmin',
-		description: 'MongoDB Web & Electron Client',
-		url: 'https://github.com/alex-milanov/mongo-admin',
-		repo: 'https://github.com/alex-milanov/mongo-admin',
-		img: '../assets/img/demos/mongo-admin.png'
-	},
-	{
-		title: 'AlphaPM',
-		description: 'Yet another project management system',
-		url: 'https://alex-milanov.github.io/alphapm',
-		repo: 'https://github.com/alex-milanov/alphapm',
-		img: '../assets/img/demos/alphapm.png'
-	},
-	{
-		title: 'Jam Station',
-		description: 'Web based DAW with Web Audio API & Web MIDI API',
-		url: 'https://alex-milanov.github.io/jam-station',
-		repo: 'https://github.com/alex-milanov/jam-station',
-		img: '../assets/img/demos/jam-station.png'
-	},
-	{
-		title: 'MongoAdmin',
-		description: 'MongoDB Web & Electron Client',
-		url: 'https://github.com/alex-milanov/mongo-admin',
-		repo: 'https://github.com/alex-milanov/mongo-admin',
-		img: '../assets/img/demos/mongo-admin.png'
-	},
-	{
-		title: 'AlphaPM',
-		description: 'Yet another project management system',
-		url: 'https://alex-milanov.github.io/alphapm',
-		repo: 'https://github.com/alex-milanov/alphapm',
-		img: '../assets/img/demos/alphapm.png'
-	},
-	{
-		title: 'Jam Station',
-		description: 'Web based DAW with Web Audio API & Web MIDI API',
-		url: 'https://alex-milanov.github.io/jam-station',
-		repo: 'https://github.com/alex-milanov/jam-station',
-		img: '../assets/img/demos/jam-station.png'
-	},
-	{
-		title: 'MongoAdmin',
-		description: 'MongoDB Web & Electron Client',
-		url: 'https://github.com/alex-milanov/mongo-admin',
-		repo: 'https://github.com/alex-milanov/mongo-admin',
-		img: '../assets/img/demos/mongo-admin.png'
-	}
-];
-
-module.exports = ({state, actions}) => section('#ui', div('.hero', [
-	h1('i4web.biz'),
-	h2(['crafting', br(), 'digital', br(), 'experiences']),
-	ul('.menu', [
-		li([i('.fa.fa-info'), ' About']),
-		li([i('.fa.fa-eye'), ' Demos']),
-		li([i('.fa.fa-at'), ' Contact'])
-	]),
-	ul('.demos', demos.map(demo =>
-		li({
-			style: {
-				backgroundImage: `url(${demo.img})`
-			}
-		}, [
-			span(demo.title),
-			hr(),
-			span(demo.description)
-		])
-	))
-]));
+module.exports = ({state, actions}) => section('#ui', [
+	nav({state, actions}),
+	contact({state, actions}),
+	showcase({state, actions})
+]);
