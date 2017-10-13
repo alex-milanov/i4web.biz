@@ -8,10 +8,10 @@ const {
 // components
 const nav = require('./nav');
 const showcase = require('./showcase');
-const contact = require('./contact');
+const leftBar = require('./left-bar');
 
 module.exports = ({state, actions}) => section('#ui', [
 	nav({state, actions}),
-	contact({state, actions}),
+	leftBar({state, actions}),
 	showcase({state, actions})
 ]);
