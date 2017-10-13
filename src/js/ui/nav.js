@@ -11,6 +11,6 @@ module.exports = ({state, actions}) => section('.nav', [
 	ul('.menu', [
 		li(a([i('.fa.fa-eye'), ' Showcase'])),
 		li(a([i('.fa.fa-info'), ' Info'])),
-		li(a([i('.fa.fa-at'), ' Contact']))
+		li(a('[href="mailto:contact@i4web.biz"]', [i('.fa.fa-at'), ' Contact']))
 	])
 ]);

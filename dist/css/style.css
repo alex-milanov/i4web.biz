@@ -2404,7 +2404,9 @@ h1, h2, h3 {
           display: block;
           width: 100%;
           cursor: pointer;
-          transition: background 0.5s; }
+          transition: background 0.5s;
+          color: inherit;
+          text-decoration: none; }
           #ui .nav .menu li a:hover {
             background: rgba(200, 200, 200, 0.5); }
   #ui .left-bar {
